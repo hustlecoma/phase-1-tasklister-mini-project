@@ -11,7 +11,17 @@
 
     <form id="create-task-form" action="" method="POST">
       <label for="new-task-description">Task description:</label>
-      <input type="text" id="new-task-description" name="new-task-description" placeholder="description">
+      <!-- priority dropdown selector -->
+        <select name="priority" id="task-priority"> 
+        <option value="">--- Task Priority ----</option>
+        <option value="#2BFF00">Low - [ green ]</option>
+        <option value="#FFFF19">Medium - [ yellow ]</option>
+        <option value="#FF2A00">High - [ red ]</option>
+
+      </select> 
+      <input type="text" id="new_task_description" name="new-task-description" placeholder="description">
+      
+
       <input type="submit" value="Create New Task">
     </form>
 
